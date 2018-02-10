@@ -58,7 +58,7 @@ so you have the following options:
    $ sudo mv alexa-downloader.phar /usr/local/bin/alexa
    ```
  
-If you have installed phar-composer system-wide, you can now verify everything works by running:
+If you have installed burpsuite/alexa-downloader system-wide, you can now verify everything works by running:
 
 ```bash
 $ alexa-downloader -v
