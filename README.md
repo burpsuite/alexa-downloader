@@ -1,6 +1,6 @@
-# burpsuite/alexa
+# burpsuite/alexa-downloader
 
-Simple `amazon-alexa` xml downloader via burpsuite/alexa.
+Simple `amazon-alexa` xml downloader via burpsuite/alexa-downloader.
 
 It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
@@ -11,12 +11,12 @@ It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
 ## Usage
 
-Once burpsuite/alexa is [installed](#install), you can use it via command line like this.
+Once burpsuite/alexa-downloader is [installed](#install), you can use it via command line like this.
 
 ### download command
 
-The download command provides an fast command line downloads,<br>
-you need to download at least 100 data,<br>
+The download command provides an fast command line downloads<br>
+If you need to download alexa data, you need to download at least 100 data<br>
 you can use the following command:
 
 ```bash
@@ -25,13 +25,13 @@ $ alexa id {accessKeyId} key {secretAccessKey} state {countryCode} start {0-9999
 
 ## Install
 
-You can grab a copy of burpsuite/alexa in either of the following ways.
+You can grab a copy of burpsuite/alexa-downloader in either of the following ways.
 
 ### As a phar (recommended)
 
 You can simply download a pre-compiled and ready-to-use version as a Phar
 to any directory.
-Simply download the latest `alexa.phar` file from our
+Simply download the latest `alexa-downloader.phar` file from our
 [releases page](https://github.com/burpsuite/alexa/releases):
 
 [Latest release](https://github.com/burpsuite/alexa/releases/latest)
@@ -40,7 +40,7 @@ That's it already. You can now verify everything works by running this:
 
 ```bash
 $ cd ~/Downloads
-$ php alexa.phar -v
+$ php alexa-downloader.phar -v
 ```
 
 The above usage examples assume you've installed alexa system-wide to your $PATH (recommended),
@@ -48,20 +48,20 @@ so you have the following options:
 
 1.  Only use alexa locally and adjust the usage examples: So instead of
 
-    running `$ crevasse -v`, you have to type `$ php alexa.phar -v`.
+    running `$ alexa-downloader -v`, you have to type `$ php alexa.phar -v`.
 
 
-3.  Or you can manually make the `alexa.phar` executable and move it to your $PATH by running:
+3.  Or you can manually make the `alexa-downloader.phar` executable and move it to your $PATH by running:
 
    ```bash
-   $ chmod 755 alexa.phar
-   $ sudo mv alexa.phar /usr/local/bin/alexa
+   $ chmod 755 alexa-downloader.phar
+   $ sudo mv alexa-downloader.phar /usr/local/bin/alexa
    ```
  
 If you have installed phar-composer system-wide, you can now verify everything works by running:
 
 ```bash
-$ alexa -v
+$ alexa-downloader -v
 ```
 
 #### Updating alexa
