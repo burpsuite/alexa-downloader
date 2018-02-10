@@ -15,8 +15,8 @@ Once burpsuite/alexa-downloader is [installed](#install), you can use it via com
 
 ### download command
 
-The download command provides an fast command line downloads<br>
-If you need to download alexa data, you need to download at least 100 data<br>
+The download command provides an fast command line downloads,<br>
+If you need to download alexa data, you need to download at least 100 data,<br>
 you can use the following command:
 
 ```bash
