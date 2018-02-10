@@ -48,7 +48,7 @@ so you have the following options:
 
 1.  Only use alexa locally and adjust the usage examples: So instead of
 
-    running `$ alexa-downloader -v`, you have to type `$ php alexa.phar -v`.
+    running `$ alexa-downloader -v`, you have to type `$ php alexa-downloader.phar -v`.
 
 
 3.  Or you can manually make the `alexa-downloader.phar` executable and move it to your $PATH by running:
