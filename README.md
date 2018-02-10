@@ -1,4 +1,4 @@
-# crevasse/converter
+# burpsuite/alexa
 
 Simple `amazon-alexa` xml downloader via burpsuite/alexa.
 
@@ -43,15 +43,15 @@ $ cd ~/Downloads
 $ php alexa.phar -v
 ```
 
-The above usage examples assume you've installed crevasse system-wide to your $PATH (recommended),
+The above usage examples assume you've installed alexa system-wide to your $PATH (recommended),
 so you have the following options:
 
-1.  Only use crevasse locally and adjust the usage examples: So instead of
+1.  Only use alexa locally and adjust the usage examples: So instead of
 
     running `$ crevasse -v`, you have to type `$ php alexa.phar -v`.
 
 
-3.  Or you can manually make the `crevasse.phar` executable and move it to your $PATH by running:
+3.  Or you can manually make the `alexa.phar` executable and move it to your $PATH by running:
 
    ```bash
    $ chmod 755 alexa.phar
