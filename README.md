@@ -11,7 +11,7 @@ It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
 ## Usage
 
-Once crevasse/converter is [installed](#install), you can use it via command line like this.
+Once burpsuite/alexa is [installed](#install), you can use it via command line like this.
 
 ### download command
 
