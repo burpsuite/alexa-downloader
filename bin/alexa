@@ -1,0 +1,11 @@
+<?php
+
+require_once "../vendor/autoload.php";
+spl_autoload_register(function ($class_name) {
+    $class_name = str_replace('BurpSuite\\', '', $class_name);
+    $class_name = str_replace('Alexa\\', '', $class_name);
+    $class_name = str_replace('\\', '/', $class_name);
+    include "../src/alexa/{$class_name}.php";
+});
+
+(new \BurpSuite\Alexa\Export());

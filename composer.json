@@ -1,0 +1,25 @@
+{
+  "name": "burpsuite/alexa",
+  "description": "Simple amazon-alexa xml downloader via burpsuite/alexa.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "burpsuite",
+      "email": "burpsuite@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-curl": "*",
+    "php-curl-class/php-curl-class": "~7.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Crevasse\\": "src/alexa"
+    }
+  },
+  "bin": ["bin/alexa"]
+}
