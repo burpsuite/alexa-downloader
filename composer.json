@@ -1,6 +1,6 @@
 {
-  "name": "burpsuite/alexa",
-  "description": "Simple amazon-alexa xml downloader via burpsuite/alexa.",
+  "name": "burpsuite/alexa-downloader",
+  "description": "Simple amazon-alexa xml downloader via burpsuite/alexa-downloader.",
   "license": "MIT",
   "authors": [
     {
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Crevasse\\": "src/alexa"
+      "BurpSuite\\Alexa\\": "src/alexa"
     }
   },
   "bin": ["bin/alexa"]
