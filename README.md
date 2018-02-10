@@ -2,6 +2,8 @@
 
 Simple `amazon-alexa-top-sites` xml downloads via burpsuite/alexa-downloader.
 
+![screen](https://i.imgur.com/Orx1WxG.png)
+
 It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
 * Create a amazon-alexa batch downloads task.
