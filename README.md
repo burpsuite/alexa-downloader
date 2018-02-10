@@ -20,7 +20,7 @@ If you need to download alexa data, you need to download at least 100 data,<br>
 you can use the following command:
 
 ```bash
-$ alexa-downloader id {accessKeyId} key {secretAccessKey} state {countryCode} start {0-9999} end {0-9999} export {path}
+$ alexa-downloader id {accessKeyId} key {secretAccessKey} state {countryCode} start {0-9999} end {0-9999} export {export_path}
 ```
 
 ## Install
