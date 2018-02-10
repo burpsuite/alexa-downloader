@@ -1,6 +1,6 @@
 # burpsuite/alexa-downloader
 
-Simple `amazon-alexa` xml downloader via burpsuite/alexa-downloader.
+Simple `amazon-alexa` xml downloads via burpsuite/alexa-downloader.
 
 It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
