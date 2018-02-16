@@ -99,15 +99,20 @@ class Export extends Command
             !isset(Kernel::$start_count) ?
                 Kernel::$start_count = $start
                 : Kernel::$start_count = Kernel::$end_count + 1;
-            !isset(Kernel::$end_count) ?
-                Kernel::$end_count = Kernel::$start_count + 100
-                : Kernel::$end_count = Kernel::$end_count + 101;
-
+            isset(Kernel::$end_count) ?: Kernel::$end_count = 100;
+            if (($end - Kernel::$start_count) >= 100) {
+                Kernel::$end_count = Kernel::$start_count + 100;
+                Kernel::$get_count = 100;
+            }
+            elseif (($end - Kernel::$start_count) < 100) {
+                Kernel::$end_count = $end;
+                Kernel::$get_count = $end - Kernel::$start_count;
+            }
             $alexa = new Kernel($accessKey, $secretKey, $state);
             $save_path = $dir_path.'alexa_'.Kernel::$start_count.'-'.Kernel::$end_count.'.xml';
             $this->outputContent($dir_path, $save_path, $alexa);
             Report::setReport("write save_path[{$save_path}] complete!");
         }
-        Report::setReport('all complete.');
+        Report::setReport('all completed.');
     }
 }

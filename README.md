@@ -1,6 +1,8 @@
 # burpsuite/alexa-downloader
 
-Simple `amazon-alexa` xml downloads via burpsuite/alexa-downloader.
+Simple `amazon-alexa-top-sites` xml downloads via burpsuite/alexa-downloader.
+
+![screen](https://i.imgur.com/Orx1WxG.png)
 
 It takes your existing `accessKeyId` `secretAccessKey` `countryCode`.
 
@@ -16,11 +18,10 @@ Once burpsuite/alexa-downloader is [installed](#install), you can use it via com
 ### download command
 
 The download command provides an fast command line downloads,<br>
-If you need to download alexa data, you need to download at least 100 data,<br>
 you can use the following command:
 
 ```bash
-$ alexa-downloader id {accessKeyId} key {secretAccessKey} state {countryCode} start {0-9999} end {0-9999} export {path}
+$ alexa-downloader id [accessKeyId] key [secretAccessKey] state [countryCode] start [0-99999] end [0-99999] export [export_path]
 ```
 
 ## Install

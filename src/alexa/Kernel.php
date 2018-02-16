@@ -8,6 +8,7 @@ class Kernel {
 
     public static $start_count       = null;
     public static $end_count         = null;
+    public static $get_count         = null;
     public static $accessKeyId       = null;
     public static $secretAccessKey   = null;
     public static $countryCode       = null;
@@ -93,7 +94,7 @@ class Kernel {
             'Action'            => self::$action_name,
             'ResponseGroup'     => self::$response_group,
             'CountryCode'       => self::$countryCode,
-            'Count'             => self::$end_count,
+            'Count'             => self::$get_count,
             'Start'             => self::$start_count
         );
         ksort($params);
