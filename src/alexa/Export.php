@@ -7,8 +7,8 @@ use BurpSuite\Alexa\Kernel;
 
 class Export extends Command
 {
-    const VERSION = '0.1.0';
-    const VERSION_DATE = '2018-02-10 15:05:53';
+    const VERSION = '0.2.0';
+    const VERSION_DATE = '2018-02-17 03:35:53';
     public $convert_content = null;
     public $convert_buffer = [];
     public $convert_result = [];
